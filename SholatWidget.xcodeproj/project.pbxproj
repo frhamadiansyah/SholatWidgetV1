@@ -1,0 +1,913 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		75153EC42545D09800699F0A /* WaktuSholatTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75153EC32545D09800699F0A /* WaktuSholatTimelineProvider.swift */; };
+		7520802B2567B9B90077B06E /* SettingTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7520802A2567B9B90077B06E /* SettingTableCell.swift */; };
+		75271EB72571185C00D3343A /* SholatNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75271EB62571185C00D3343A /* SholatNotification.swift */; };
+		75271EC52572B69800D3343A /* PreAdhanReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75271EC42572B69800D3343A /* PreAdhanReminderView.swift */; };
+		75271ECB2572CC3000D3343A /* AboutUsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75271ECA2572CC3000D3343A /* AboutUsView.swift */; };
+		75271ED12573A64000D3343A /* CalculationMethodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75271ED02573A64000D3343A /* CalculationMethodView.swift */; };
+		75271ED72573A7A800D3343A /* CalculationMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75271ED62573A7A800D3343A /* CalculationMethod.swift */; };
+		75271ED82573A7A900D3343A /* CalculationMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75271ED62573A7A800D3343A /* CalculationMethod.swift */; };
+		753C67652567BD8C00EBDF7A /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753C67642567BD8C00EBDF7A /* SettingViewModel.swift */; };
+		754A8BF125531F1A00ACC47C /* PieChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754A8BF025531F1A00ACC47C /* PieChartCell.swift */; };
+		754A8BF225531F1A00ACC47C /* PieChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754A8BF025531F1A00ACC47C /* PieChartCell.swift */; };
+		754A8BF825532B8F00ACC47C /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754A8BF725532B8F00ACC47C /* ProgressBar.swift */; };
+		754A8BF925532B8F00ACC47C /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754A8BF725532B8F00ACC47C /* ProgressBar.swift */; };
+		7555BC462541D72900025C7F /* WaktuSholatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555BC452541D72900025C7F /* WaktuSholatApp.swift */; };
+		7555BC482541D72900025C7F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555BC472541D72900025C7F /* ContentView.swift */; };
+		7555BC4A2541D72B00025C7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7555BC492541D72B00025C7F /* Assets.xcassets */; };
+		7555BC4D2541D72B00025C7F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7555BC4C2541D72B00025C7F /* Preview Assets.xcassets */; };
+		7555BC582541D72C00025C7F /* WaktuSholatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555BC572541D72C00025C7F /* WaktuSholatTests.swift */; };
+		7555BC632541D72C00025C7F /* WaktuSholatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555BC622541D72C00025C7F /* WaktuSholatUITests.swift */; };
+		7555BC752543322B00025C7F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555BC742543322B00025C7F /* Model.swift */; };
+		7555BC7A254412D500025C7F /* SholatAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555BC79254412D500025C7F /* SholatAPIService.swift */; };
+		7555BC7F254491AE00025C7F /* SholatObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555BC7E254491AE00025C7F /* SholatObservableObject.swift */; };
+		7555BC8A2545572100025C7F /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7555BC892545572100025C7F /* WidgetKit.framework */; };
+		7555BC8C2545572100025C7F /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7555BC8B2545572100025C7F /* SwiftUI.framework */; };
+		7555BC8F2545572100025C7F /* WaktuSholatWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555BC8E2545572100025C7F /* WaktuSholatWidget.swift */; };
+		7555BC912545572300025C7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7555BC902545572300025C7F /* Assets.xcassets */; };
+		7555BC952545572300025C7F /* SholatWidgetWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7555BC872545572100025C7F /* SholatWidgetWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7555BC9F2545575F00025C7F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555BC742543322B00025C7F /* Model.swift */; };
+		7555BCA42545576200025C7F /* SholatAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555BC79254412D500025C7F /* SholatAPIService.swift */; };
+		7555BCAA2545583700025C7F /* WaktuSholatEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555BCA92545583700025C7F /* WaktuSholatEntry.swift */; };
+		7555BCB025455B4B00025C7F /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555BCAF25455B4B00025C7F /* Extension+String.swift */; };
+		7555BCB525455B5C00025C7F /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555BCAF25455B4B00025C7F /* Extension+String.swift */; };
+		7556CB9C25579DE5000539B0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7556CB9B25579DE5000539B0 /* HomeView.swift */; };
+		7556CBA625579FF6000539B0 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7556CBA525579FF6000539B0 /* ScheduleView.swift */; };
+		7556CBAC2557A003000539B0 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7556CBAB2557A003000539B0 /* SettingView.swift */; };
+		75E0DBBE2568414600F3E745 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E0DBBD2568414600F3E745 /* Constant.swift */; };
+		75E0DBC7256841A600F3E745 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E0DBBD2568414600F3E745 /* Constant.swift */; };
+		75E0DBCD25684CA300F3E745 /* Extension+UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E0DBCC25684CA300F3E745 /* Extension+UserDefaults.swift */; };
+		75E0DBD22568577C00F3E745 /* Extension+UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E0DBCC25684CA300F3E745 /* Extension+UserDefaults.swift */; };
+		75E0DBD82569733800F3E745 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E0DBD72569733800F3E745 /* LocationManager.swift */; };
+		75F5E0442569F38D00CFE7BC /* ScheduleSholatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F5E0432569F38D00CFE7BC /* ScheduleSholatView.swift */; };
+		75F5E05E256BDFB300CFE7BC /* WidgetLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F5E054256BDF7300CFE7BC /* WidgetLocationManager.swift */; };
+		75F70F4A2545DB3700C8F618 /* WaktuSholatWidgetSmall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F70F492545DB3700C8F618 /* WaktuSholatWidgetSmall.swift */; };
+		75F70F502545DB4800C8F618 /* WaktuSholatWidgetMedium.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F70F4F2545DB4800C8F618 /* WaktuSholatWidgetMedium.swift */; };
+		75F70F562545DB5900C8F618 /* WaktuSholatWidgetLarge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F70F552545DB5900C8F618 /* WaktuSholatWidgetLarge.swift */; };
+		75F70F5F2545DC9B00C8F618 /* WaktuSholatEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F70F432545DB0300C8F618 /* WaktuSholatEntryView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7555BC542541D72C00025C7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7555BC3A2541D72900025C7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7555BC412541D72900025C7F;
+			remoteInfo = WaktuSholat;
+		};
+		7555BC5F2541D72C00025C7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7555BC3A2541D72900025C7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7555BC412541D72900025C7F;
+			remoteInfo = WaktuSholat;
+		};
+		7555BC932545572300025C7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7555BC3A2541D72900025C7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7555BC862545572100025C7F;
+			remoteInfo = WaktuSholatWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7555BC992545572300025C7F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7555BC952545572300025C7F /* SholatWidgetWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		75153EC32545D09800699F0A /* WaktuSholatTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaktuSholatTimelineProvider.swift; sourceTree = "<group>"; };
+		7520802A2567B9B90077B06E /* SettingTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableCell.swift; sourceTree = "<group>"; };
+		75271EB62571185C00D3343A /* SholatNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SholatNotification.swift; sourceTree = "<group>"; };
+		75271EC42572B69800D3343A /* PreAdhanReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreAdhanReminderView.swift; sourceTree = "<group>"; };
+		75271ECA2572CC3000D3343A /* AboutUsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsView.swift; sourceTree = "<group>"; };
+		75271ED02573A64000D3343A /* CalculationMethodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationMethodView.swift; sourceTree = "<group>"; };
+		75271ED62573A7A800D3343A /* CalculationMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationMethod.swift; sourceTree = "<group>"; };
+		753C67642567BD8C00EBDF7A /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
+		754A8BF025531F1A00ACC47C /* PieChartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartCell.swift; sourceTree = "<group>"; };
+		754A8BF725532B8F00ACC47C /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		7555BC422541D72900025C7F /* SholatWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SholatWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7555BC452541D72900025C7F /* WaktuSholatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaktuSholatApp.swift; sourceTree = "<group>"; };
+		7555BC472541D72900025C7F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7555BC492541D72B00025C7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7555BC4C2541D72B00025C7F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7555BC4E2541D72B00025C7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7555BC532541D72C00025C7F /* SholatWidgetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SholatWidgetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7555BC572541D72C00025C7F /* WaktuSholatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaktuSholatTests.swift; sourceTree = "<group>"; };
+		7555BC592541D72C00025C7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7555BC5E2541D72C00025C7F /* SholatWidgetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SholatWidgetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7555BC622541D72C00025C7F /* WaktuSholatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaktuSholatUITests.swift; sourceTree = "<group>"; };
+		7555BC642541D72C00025C7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7555BC742543322B00025C7F /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		7555BC79254412D500025C7F /* SholatAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SholatAPIService.swift; sourceTree = "<group>"; };
+		7555BC7E254491AE00025C7F /* SholatObservableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SholatObservableObject.swift; sourceTree = "<group>"; };
+		7555BC872545572100025C7F /* SholatWidgetWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SholatWidgetWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		7555BC892545572100025C7F /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		7555BC8B2545572100025C7F /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		7555BC8E2545572100025C7F /* WaktuSholatWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaktuSholatWidget.swift; sourceTree = "<group>"; };
+		7555BC902545572300025C7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7555BC922545572300025C7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7555BCA92545583700025C7F /* WaktuSholatEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaktuSholatEntry.swift; sourceTree = "<group>"; };
+		7555BCAF25455B4B00025C7F /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
+		7556CB9B25579DE5000539B0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		7556CBA525579FF6000539B0 /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
+		7556CBAB2557A003000539B0 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		75E0DBBD2568414600F3E745 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		75E0DBCC25684CA300F3E745 /* Extension+UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UserDefaults.swift"; sourceTree = "<group>"; };
+		75E0DBD72569733800F3E745 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		75F5E0432569F38D00CFE7BC /* ScheduleSholatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleSholatView.swift; sourceTree = "<group>"; };
+		75F5E054256BDF7300CFE7BC /* WidgetLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetLocationManager.swift; sourceTree = "<group>"; };
+		75F70F432545DB0300C8F618 /* WaktuSholatEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaktuSholatEntryView.swift; sourceTree = "<group>"; };
+		75F70F492545DB3700C8F618 /* WaktuSholatWidgetSmall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaktuSholatWidgetSmall.swift; sourceTree = "<group>"; };
+		75F70F4F2545DB4800C8F618 /* WaktuSholatWidgetMedium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaktuSholatWidgetMedium.swift; sourceTree = "<group>"; };
+		75F70F552545DB5900C8F618 /* WaktuSholatWidgetLarge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaktuSholatWidgetLarge.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7555BC3F2541D72900025C7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7555BC502541D72C00025C7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7555BC5B2541D72C00025C7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7555BC842545572100025C7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7555BC8C2545572100025C7F /* SwiftUI.framework in Frameworks */,
+				7555BC8A2545572100025C7F /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		754A8BFE25532DC800ACC47C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				75F70F492545DB3700C8F618 /* WaktuSholatWidgetSmall.swift */,
+				75F70F4F2545DB4800C8F618 /* WaktuSholatWidgetMedium.swift */,
+				75F70F552545DB5900C8F618 /* WaktuSholatWidgetLarge.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7555BC392541D72900025C7F = {
+			isa = PBXGroup;
+			children = (
+				7555BC9E2545574C00025C7F /* Shared */,
+				7555BC442541D72900025C7F /* WaktuSholat */,
+				7555BC562541D72C00025C7F /* WaktuSholatTests */,
+				7555BC612541D72C00025C7F /* WaktuSholatUITests */,
+				7555BC8D2545572100025C7F /* WaktuSholatWidget */,
+				7555BC882545572100025C7F /* Frameworks */,
+				7555BC432541D72900025C7F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7555BC432541D72900025C7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7555BC422541D72900025C7F /* SholatWidget.app */,
+				7555BC532541D72C00025C7F /* SholatWidgetTests.xctest */,
+				7555BC5E2541D72C00025C7F /* SholatWidgetUITests.xctest */,
+				7555BC872545572100025C7F /* SholatWidgetWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7555BC442541D72900025C7F /* WaktuSholat */ = {
+			isa = PBXGroup;
+			children = (
+				75E0DBBC2568413200F3E745 /* Constant */,
+				7556CB9625579DB9000539B0 /* ViewModel */,
+				7556CB9525579DAE000539B0 /* Views */,
+				7555BC452541D72900025C7F /* WaktuSholatApp.swift */,
+				7555BC472541D72900025C7F /* ContentView.swift */,
+				7555BC492541D72B00025C7F /* Assets.xcassets */,
+				7555BC4E2541D72B00025C7F /* Info.plist */,
+				7555BC4B2541D72B00025C7F /* Preview Content */,
+			);
+			path = WaktuSholat;
+			sourceTree = "<group>";
+		};
+		7555BC4B2541D72B00025C7F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7555BC4C2541D72B00025C7F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7555BC562541D72C00025C7F /* WaktuSholatTests */ = {
+			isa = PBXGroup;
+			children = (
+				7555BC572541D72C00025C7F /* WaktuSholatTests.swift */,
+				7555BC592541D72C00025C7F /* Info.plist */,
+			);
+			path = WaktuSholatTests;
+			sourceTree = "<group>";
+		};
+		7555BC612541D72C00025C7F /* WaktuSholatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7555BC622541D72C00025C7F /* WaktuSholatUITests.swift */,
+				7555BC642541D72C00025C7F /* Info.plist */,
+			);
+			path = WaktuSholatUITests;
+			sourceTree = "<group>";
+		};
+		7555BC882545572100025C7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7555BC892545572100025C7F /* WidgetKit.framework */,
+				7555BC8B2545572100025C7F /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7555BC8D2545572100025C7F /* WaktuSholatWidget */ = {
+			isa = PBXGroup;
+			children = (
+				754A8BFE25532DC800ACC47C /* Views */,
+				7555BC8E2545572100025C7F /* WaktuSholatWidget.swift */,
+				7555BC902545572300025C7F /* Assets.xcassets */,
+				7555BC922545572300025C7F /* Info.plist */,
+				7555BCA92545583700025C7F /* WaktuSholatEntry.swift */,
+				75153EC32545D09800699F0A /* WaktuSholatTimelineProvider.swift */,
+				75F70F432545DB0300C8F618 /* WaktuSholatEntryView.swift */,
+				75F5E054256BDF7300CFE7BC /* WidgetLocationManager.swift */,
+			);
+			path = WaktuSholatWidget;
+			sourceTree = "<group>";
+		};
+		7555BC9E2545574C00025C7F /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				7555BC742543322B00025C7F /* Model.swift */,
+				7555BC79254412D500025C7F /* SholatAPIService.swift */,
+				7555BCAF25455B4B00025C7F /* Extension+String.swift */,
+				754A8BF025531F1A00ACC47C /* PieChartCell.swift */,
+				754A8BF725532B8F00ACC47C /* ProgressBar.swift */,
+				75E0DBCC25684CA300F3E745 /* Extension+UserDefaults.swift */,
+				75E0DBD72569733800F3E745 /* LocationManager.swift */,
+				75271ED62573A7A800D3343A /* CalculationMethod.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		7556CB9525579DAE000539B0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7556CB9B25579DE5000539B0 /* HomeView.swift */,
+				7556CBA525579FF6000539B0 /* ScheduleView.swift */,
+				7556CBAB2557A003000539B0 /* SettingView.swift */,
+				7520802A2567B9B90077B06E /* SettingTableCell.swift */,
+				75F5E0432569F38D00CFE7BC /* ScheduleSholatView.swift */,
+				75271EC42572B69800D3343A /* PreAdhanReminderView.swift */,
+				75271ECA2572CC3000D3343A /* AboutUsView.swift */,
+				75271ED02573A64000D3343A /* CalculationMethodView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7556CB9625579DB9000539B0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7555BC7E254491AE00025C7F /* SholatObservableObject.swift */,
+				753C67642567BD8C00EBDF7A /* SettingViewModel.swift */,
+				75271EB62571185C00D3343A /* SholatNotification.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		75E0DBBC2568413200F3E745 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				75E0DBBD2568414600F3E745 /* Constant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7555BC412541D72900025C7F /* SholatWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7555BC672541D72C00025C7F /* Build configuration list for PBXNativeTarget "SholatWidget" */;
+			buildPhases = (
+				7555BC3E2541D72900025C7F /* Sources */,
+				7555BC3F2541D72900025C7F /* Frameworks */,
+				7555BC402541D72900025C7F /* Resources */,
+				7555BC992545572300025C7F /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7555BC942545572300025C7F /* PBXTargetDependency */,
+			);
+			name = SholatWidget;
+			productName = WaktuSholat;
+			productReference = 7555BC422541D72900025C7F /* SholatWidget.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7555BC522541D72C00025C7F /* SholatWidgetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7555BC6A2541D72C00025C7F /* Build configuration list for PBXNativeTarget "SholatWidgetTests" */;
+			buildPhases = (
+				7555BC4F2541D72C00025C7F /* Sources */,
+				7555BC502541D72C00025C7F /* Frameworks */,
+				7555BC512541D72C00025C7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7555BC552541D72C00025C7F /* PBXTargetDependency */,
+			);
+			name = SholatWidgetTests;
+			productName = WaktuSholatTests;
+			productReference = 7555BC532541D72C00025C7F /* SholatWidgetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7555BC5D2541D72C00025C7F /* SholatWidgetUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7555BC6D2541D72C00025C7F /* Build configuration list for PBXNativeTarget "SholatWidgetUITests" */;
+			buildPhases = (
+				7555BC5A2541D72C00025C7F /* Sources */,
+				7555BC5B2541D72C00025C7F /* Frameworks */,
+				7555BC5C2541D72C00025C7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7555BC602541D72C00025C7F /* PBXTargetDependency */,
+			);
+			name = SholatWidgetUITests;
+			productName = WaktuSholatUITests;
+			productReference = 7555BC5E2541D72C00025C7F /* SholatWidgetUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		7555BC862545572100025C7F /* SholatWidgetWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7555BC962545572300025C7F /* Build configuration list for PBXNativeTarget "SholatWidgetWidgetExtension" */;
+			buildPhases = (
+				7555BC832545572100025C7F /* Sources */,
+				7555BC842545572100025C7F /* Frameworks */,
+				7555BC852545572100025C7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SholatWidgetWidgetExtension;
+			productName = WaktuSholatWidgetExtension;
+			productReference = 7555BC872545572100025C7F /* SholatWidgetWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7555BC3A2541D72900025C7F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					7555BC412541D72900025C7F = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					7555BC522541D72C00025C7F = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 7555BC412541D72900025C7F;
+					};
+					7555BC5D2541D72C00025C7F = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 7555BC412541D72900025C7F;
+					};
+					7555BC862545572100025C7F = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 7555BC3D2541D72900025C7F /* Build configuration list for PBXProject "SholatWidget" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7555BC392541D72900025C7F;
+			productRefGroup = 7555BC432541D72900025C7F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7555BC412541D72900025C7F /* SholatWidget */,
+				7555BC522541D72C00025C7F /* SholatWidgetTests */,
+				7555BC5D2541D72C00025C7F /* SholatWidgetUITests */,
+				7555BC862545572100025C7F /* SholatWidgetWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7555BC402541D72900025C7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7555BC4D2541D72B00025C7F /* Preview Assets.xcassets in Resources */,
+				7555BC4A2541D72B00025C7F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7555BC512541D72C00025C7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7555BC5C2541D72C00025C7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7555BC852545572100025C7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7555BC912545572300025C7F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7555BC3E2541D72900025C7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7556CB9C25579DE5000539B0 /* HomeView.swift in Sources */,
+				754A8BF125531F1A00ACC47C /* PieChartCell.swift in Sources */,
+				7555BC7F254491AE00025C7F /* SholatObservableObject.swift in Sources */,
+				753C67652567BD8C00EBDF7A /* SettingViewModel.swift in Sources */,
+				75E0DBD82569733800F3E745 /* LocationManager.swift in Sources */,
+				7555BC752543322B00025C7F /* Model.swift in Sources */,
+				75271ED72573A7A800D3343A /* CalculationMethod.swift in Sources */,
+				75271ECB2572CC3000D3343A /* AboutUsView.swift in Sources */,
+				7555BCB525455B5C00025C7F /* Extension+String.swift in Sources */,
+				75271ED12573A64000D3343A /* CalculationMethodView.swift in Sources */,
+				75271EB72571185C00D3343A /* SholatNotification.swift in Sources */,
+				7556CBA625579FF6000539B0 /* ScheduleView.swift in Sources */,
+				75E0DBBE2568414600F3E745 /* Constant.swift in Sources */,
+				7555BC482541D72900025C7F /* ContentView.swift in Sources */,
+				7555BC462541D72900025C7F /* WaktuSholatApp.swift in Sources */,
+				754A8BF825532B8F00ACC47C /* ProgressBar.swift in Sources */,
+				7555BC7A254412D500025C7F /* SholatAPIService.swift in Sources */,
+				75271EC52572B69800D3343A /* PreAdhanReminderView.swift in Sources */,
+				7556CBAC2557A003000539B0 /* SettingView.swift in Sources */,
+				75F5E0442569F38D00CFE7BC /* ScheduleSholatView.swift in Sources */,
+				75E0DBCD25684CA300F3E745 /* Extension+UserDefaults.swift in Sources */,
+				7520802B2567B9B90077B06E /* SettingTableCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7555BC4F2541D72C00025C7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7555BC582541D72C00025C7F /* WaktuSholatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7555BC5A2541D72C00025C7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7555BC632541D72C00025C7F /* WaktuSholatUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7555BC832545572100025C7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7555BCB025455B4B00025C7F /* Extension+String.swift in Sources */,
+				75F70F5F2545DC9B00C8F618 /* WaktuSholatEntryView.swift in Sources */,
+				75271ED82573A7A900D3343A /* CalculationMethod.swift in Sources */,
+				75F70F502545DB4800C8F618 /* WaktuSholatWidgetMedium.swift in Sources */,
+				7555BCA42545576200025C7F /* SholatAPIService.swift in Sources */,
+				754A8BF225531F1A00ACC47C /* PieChartCell.swift in Sources */,
+				7555BC8F2545572100025C7F /* WaktuSholatWidget.swift in Sources */,
+				75E0DBD22568577C00F3E745 /* Extension+UserDefaults.swift in Sources */,
+				75F70F4A2545DB3700C8F618 /* WaktuSholatWidgetSmall.swift in Sources */,
+				75153EC42545D09800699F0A /* WaktuSholatTimelineProvider.swift in Sources */,
+				7555BCAA2545583700025C7F /* WaktuSholatEntry.swift in Sources */,
+				75E0DBC7256841A600F3E745 /* Constant.swift in Sources */,
+				75F70F562545DB5900C8F618 /* WaktuSholatWidgetLarge.swift in Sources */,
+				754A8BF925532B8F00ACC47C /* ProgressBar.swift in Sources */,
+				75F5E05E256BDFB300CFE7BC /* WidgetLocationManager.swift in Sources */,
+				7555BC9F2545575F00025C7F /* Model.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7555BC552541D72C00025C7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7555BC412541D72900025C7F /* SholatWidget */;
+			targetProxy = 7555BC542541D72C00025C7F /* PBXContainerItemProxy */;
+		};
+		7555BC602541D72C00025C7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7555BC412541D72900025C7F /* SholatWidget */;
+			targetProxy = 7555BC5F2541D72C00025C7F /* PBXContainerItemProxy */;
+		};
+		7555BC942545572300025C7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7555BC862545572100025C7F /* SholatWidgetWidgetExtension */;
+			targetProxy = 7555BC932545572300025C7F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7555BC652541D72C00025C7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7555BC662541D72C00025C7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7555BC682541D72C00025C7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_ASSET_PATHS = "\"WaktuSholat/Preview Content\"";
+				DEVELOPMENT_TEAM = JPMPS53HUZ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = WaktuSholat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.selfproject.waktusholat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		7555BC692541D72C00025C7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_ASSET_PATHS = "\"WaktuSholat/Preview Content\"";
+				DEVELOPMENT_TEAM = JPMPS53HUZ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = WaktuSholat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.selfproject.waktusholat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		7555BC6B2541D72C00025C7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JPMPS53HUZ;
+				INFOPLIST_FILE = WaktuSholatTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.DeveloperAcademy.selfProject.WaktuSholatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SholatWidget.app/SholatWidget";
+			};
+			name = Debug;
+		};
+		7555BC6C2541D72C00025C7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JPMPS53HUZ;
+				INFOPLIST_FILE = WaktuSholatTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.DeveloperAcademy.selfProject.WaktuSholatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SholatWidget.app/SholatWidget";
+			};
+			name = Release;
+		};
+		7555BC6E2541D72C00025C7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JPMPS53HUZ;
+				INFOPLIST_FILE = WaktuSholatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.DeveloperAcademy.selfProject.WaktuSholatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WaktuSholat;
+			};
+			name = Debug;
+		};
+		7555BC6F2541D72C00025C7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JPMPS53HUZ;
+				INFOPLIST_FILE = WaktuSholatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.DeveloperAcademy.selfProject.WaktuSholatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WaktuSholat;
+			};
+			name = Release;
+		};
+		7555BC972545572300025C7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = JPMPS53HUZ;
+				INFOPLIST_FILE = WaktuSholatWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.selfproject.waktusholat.WaktuSholatWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7555BC982545572300025C7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = JPMPS53HUZ;
+				INFOPLIST_FILE = WaktuSholatWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.selfproject.waktusholat.WaktuSholatWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7555BC3D2541D72900025C7F /* Build configuration list for PBXProject "SholatWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7555BC652541D72C00025C7F /* Debug */,
+				7555BC662541D72C00025C7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7555BC672541D72C00025C7F /* Build configuration list for PBXNativeTarget "SholatWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7555BC682541D72C00025C7F /* Debug */,
+				7555BC692541D72C00025C7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7555BC6A2541D72C00025C7F /* Build configuration list for PBXNativeTarget "SholatWidgetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7555BC6B2541D72C00025C7F /* Debug */,
+				7555BC6C2541D72C00025C7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7555BC6D2541D72C00025C7F /* Build configuration list for PBXNativeTarget "SholatWidgetUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7555BC6E2541D72C00025C7F /* Debug */,
+				7555BC6F2541D72C00025C7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7555BC962545572300025C7F /* Build configuration list for PBXNativeTarget "SholatWidgetWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7555BC972545572300025C7F /* Debug */,
+				7555BC982545572300025C7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7555BC3A2541D72900025C7F /* Project object */;
+}
