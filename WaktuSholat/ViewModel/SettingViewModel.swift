@@ -57,7 +57,7 @@ class SettingViewModel: ObservableObject {
         }
     }
     
-    @Published var calculationMethod: CalculationMethod = .MuslimWorldLeague {
+    @Published var calculationMethod: CalculationMethod = .muslimWorldLeague {
         didSet {
             self.sholatVM.service.method = calculationMethod
             UserDefaults.standard.set(calculationMethod.info.name, forKey: Def.method)

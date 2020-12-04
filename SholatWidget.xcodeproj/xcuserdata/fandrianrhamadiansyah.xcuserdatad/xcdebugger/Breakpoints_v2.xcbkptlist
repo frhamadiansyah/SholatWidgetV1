@@ -23,22 +23,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "630937E9-4194-4697-8703-EFC7702C4D1E"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "WaktuSholatWidget/WaktuSholatTimelineProvider.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
-            landmarkName = "fetchWaktuSholat(completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "798F4BC1-DC73-4775-92C1-BB8C0E6B8FB8"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -110,58 +94,10 @@
             filePath = "WaktuSholatWidget/WaktuSholatTimelineProvider.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
-            landmarkName = "fetchWaktuSholat(completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "B5C6B01F-5151-4BD5-814E-A6B27F6BD3DF"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "WaktuSholatWidget/WaktuSholatTimelineProvider.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "101"
-            endingLineNumber = "101"
-            landmarkName = "fetchWaktuSholat(completion:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "B5C6B01F-5151-4BD5-814E-A6B27F6BD3DF - 70251dd8f10cd1ca"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SholatWidgetWidgetExtension.WaktuSholatTimelineProvider.(fetchWaktuSholat in _F349A6367D59D968F7B41EB0FE3053C7)(completion: (Swift.Result&lt;SholatWidgetWidgetExtension.WaktuSholatEntry, SholatWidgetWidgetExtension.SholatAPIError&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "SholatWidgetWidgetExtension"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/fandrianrhamadiansyah/fandrianLocal/iOS%20Project/WaktuSholat/WaktuSholatWidget/WaktuSholatTimelineProvider.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "101"
-                  endingLineNumber = "101"
-                  offsetFromSymbolStart = "1736">
-               </Location>
-               <Location
-                  uuid = "B5C6B01F-5151-4BD5-814E-A6B27F6BD3DF - 4694a4314ccfb35e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;SholatWidgetWidgetExtension.SholatTimings, SholatWidgetWidgetExtension.SholatAPIError&gt;) -&gt; () in SholatWidgetWidgetExtension.WaktuSholatTimelineProvider.(fetchWaktuSholat in _F349A6367D59D968F7B41EB0FE3053C7)(completion: (Swift.Result&lt;SholatWidgetWidgetExtension.WaktuSholatEntry, SholatWidgetWidgetExtension.SholatAPIError&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "SholatWidgetWidgetExtension"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/fandrianrhamadiansyah/fandrianLocal/iOS%20Project/WaktuSholat/WaktuSholatWidget/WaktuSholatTimelineProvider.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "104"
-                  endingLineNumber = "104"
-                  offsetFromSymbolStart = "400">
-               </Location>
-            </Locations>
+            startingLineNumber = "119"
+            endingLineNumber = "119"
+            landmarkName = "WaktuSholatTimelineProvider"
+            landmarkType = "21">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

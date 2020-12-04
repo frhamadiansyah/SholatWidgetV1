@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		750E2198257A3A1A0019306F /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E0DBD72569733800F3E745 /* LocationManager.swift */; };
 		75153EC42545D09800699F0A /* WaktuSholatTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75153EC32545D09800699F0A /* WaktuSholatTimelineProvider.swift */; };
 		7520802B2567B9B90077B06E /* SettingTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7520802A2567B9B90077B06E /* SettingTableCell.swift */; };
 		75271EB72571185C00D3343A /* SholatNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75271EB62571185C00D3343A /* SholatNotification.swift */; };
@@ -333,6 +334,7 @@
 				7555BC3F2541D72900025C7F /* Frameworks */,
 				7555BC402541D72900025C7F /* Resources */,
 				7555BC992545572300025C7F /* Embed App Extensions */,
+				750E2142257A28A20019306F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -477,6 +479,26 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		750E2142257A28A20019306F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7555BC3E2541D72900025C7F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -528,6 +550,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7555BCB025455B4B00025C7F /* Extension+String.swift in Sources */,
+				750E2198257A3A1A0019306F /* LocationManager.swift in Sources */,
 				75F70F5F2545DC9B00C8F618 /* WaktuSholatEntryView.swift in Sources */,
 				75271ED82573A7A900D3343A /* CalculationMethod.swift in Sources */,
 				75F70F502545DB4800C8F618 /* WaktuSholatWidgetMedium.swift in Sources */,
@@ -690,7 +713,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"WaktuSholat/Preview Content\"";
 				DEVELOPMENT_TEAM = JPMPS53HUZ;
 				ENABLE_PREVIEWS = YES;
@@ -714,7 +737,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"WaktuSholat/Preview Content\"";
 				DEVELOPMENT_TEAM = JPMPS53HUZ;
 				ENABLE_PREVIEWS = YES;
@@ -821,7 +844,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = JPMPS53HUZ;
 				INFOPLIST_FILE = WaktuSholatWidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -843,7 +866,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = JPMPS53HUZ;
 				INFOPLIST_FILE = WaktuSholatWidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

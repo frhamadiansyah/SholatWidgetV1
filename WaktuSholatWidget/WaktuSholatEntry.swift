@@ -24,6 +24,7 @@ extension WaktuSholatEntry {
     }
     
     static var placeholder : WaktuSholatEntry {
-        WaktuSholatEntry(date: Date(), sholatTime: .init(waktuSholat: .init(fajr: "00:00 wib", sunrise: "00:00 wib", dhuhr: "00:00 wib", asr: "00:00 wib", maghrib: "00:00 wib", isha: "00:00 wib")), isPlaceholder: true)
+        WaktuSholatEntry(date: Date(), sholatTime: .init(waktuSholat:.init(fajr: "00:00 wib", sunrise: "00:00 wib", dhuhr: "00:00 wib", asr: "00:00 wib", maghrib: "00:00 wib", isha: "00:00 wib")),
+                         isPlaceholder: true)
     }
 }

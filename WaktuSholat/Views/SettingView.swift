@@ -11,6 +11,8 @@ struct SettingView: View {
     
     @ObservedObject var settingVM = SettingViewModel.shared
     
+    @State var alertVisible: Bool = false
+    
     var body: some View {
         HStack {
             NavigationView {
@@ -40,10 +42,21 @@ struct SettingView: View {
                             label: {
                                 Text("Calculation Method")
                             })
-
-                        
+                        Button(action: {
+                            self.alertVisible.toggle()
+                            }
+                        , label: {
+                            Text("Widget Location Services")
+                        })
+                        .alert(isPresented: $alertVisible) {
+                            Alert (title: Text("Widget Location Services is required"),
+                                   message: Text("To fully utilize widget services, open Settings>Privacy>Location Services>SholatWidget and select 'allow location access while Using the Apps and Widgets' "),
+                                   primaryButton: .default(Text("Settings"), action: {
+                                       UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
+                                   }),
+                                   secondaryButton: .default(Text("Cancel")))
+                               }
                     }
-                    
                     
                     Section(header: Text("Notification")) {
                         Toggle(isOn: $settingVM.turnOnNotification) {

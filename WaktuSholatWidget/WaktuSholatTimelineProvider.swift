@@ -16,7 +16,7 @@ struct WaktuSholatTimelineProvider : TimelineProvider {
     
     let service = SholatAPIService.shared
     
-    var loc = WidgetLocationManager.shared
+    var loc = LocationManager()
     //    let loc = LocationManager.shared
     
     private var subscriber: AnyCancellable?
@@ -67,88 +67,61 @@ struct WaktuSholatTimelineProvider : TimelineProvider {
 
 extension WaktuSholatTimelineProvider {
     
-    private func fetchWaktuSholat(completion : @escaping (Result<WaktuSholatEntry, SholatAPIError>) -> ()) {
-        
-        
+    private func fetchWaktuSholat(completion : @escaping (Result<WaktuSholatEntry, SholatAPIError>) -> Void) {
+        loc.getCoordinates { (coord) in
+            let lat = coord.coordinate.latitude
+            let lon = coord.coordinate.longitude
+            
+            if !needRefresh() {
+                let userDefault = UserDefaults.standard
+                do {
+                    let stats = try userDefault.getObject(forKey: Def.sholat, castTo: SholatTimings.self)
+                    let entry = WaktuSholatEntry(date: Date(), sholatTime: .init(waktuSholat: stats))
+                    completion(.success(entry))
+                } catch {
+                    service.getTodaySholatTimeFromCoordinates(latitude: lat, longitude: lon) { (result) in
+                        
+                        switch result {
+                        case .success(let stats):
+                            let userDefault = UserDefaults.standard
+                            do {
+                                try userDefault.setObject(stats, forKey: Def.sholat)
+                            } catch {
 
-
-        loc.start()
-//        let lat = Double(UserDefaults.standard.float(forKey: Def.lat))
-//        let lon = Double(UserDefaults.standard.float(forKey: Def.lon))
-        let lat = loc.thisLocation?.coordinate.latitude ?? 6//-6.249//pondok aren latitude
-        let lon = loc.thisLocation?.coordinate.longitude ?? 39.2//106.85 // pondok aren longitude
-        
-//        if loc.thisLocation == nil {
-//            completion(.failure(.noData))
-//        }
-        
-//        let lat = -6.249
-//        let lon = 106.85
-//        if loc.thisLocation != nil {
-//
-//        }
-        
-        
-        if !needRefresh() {
-            let userDefault = UserDefaults.standard
-            do {
-                let stats = try userDefault.getObject(forKey: Def.sholat, castTo: SholatTimings.self)
-                let entry = WaktuSholatEntry(date: Date(), sholatTime: .init(waktuSholat: stats))
-                completion(.success(entry))
-            } catch  {
-
-                //                completion(.failure(error))
+                            }
+                            let entry = WaktuSholatEntry(date: Date(), sholatTime: .init(waktuSholat: stats))
+                            completion(.success(entry))
+                        case .failure(let _):
+                            completion(.failure(.invalidSerialization))
+                        }
+                    }
+                }
+            } else {
                 service.getTodaySholatTimeFromCoordinates(latitude: lat, longitude: lon) { (result) in
-                    
                     switch result {
-                    case .success(let stats) :
+                    case .success(let stats):
                         let userDefault = UserDefaults.standard
                         do {
                             try userDefault.setObject(stats, forKey: Def.sholat)
-                        } catch  {
+                        } catch {
 
                         }
                         let entry = WaktuSholatEntry(date: Date(), sholatTime: .init(waktuSholat: stats))
                         completion(.success(entry))
-                    case .failure(let _) :
+                    case .failure(let _):
                         completion(.failure(.invalidSerialization))
                     }
-                    
                 }
-            }
-            
-        } else {
-            service.getTodaySholatTimeFromCoordinates(latitude: lat, longitude: lon) { (result) in
-                
-                switch result {
-                case .success(let stats) :
-                    let userDefault = UserDefaults.standard
-                    do {
-                        try userDefault.setObject(stats, forKey: Def.sholat)
-                    } catch  {
-
-                    }
-                    let entry = WaktuSholatEntry(date: Date(), sholatTime: .init(waktuSholat: stats))
-                    completion(.success(entry))
-                case .failure(let error) :
-                    completion(.failure(.invalidSerialization))
-                }
-                
             }
         }
+        }
         
-    }
-    
-    
-    
-    
+       
     private func needRefresh() -> Bool {
         var boolDate = true
-        
         let format = DateFormatter()
         format.dateStyle = .short
         let dateString = format.string(from: Date())
-        
         if let date = UserDefaults.standard.string(forKey: Def.date) {
             if dateString == date {
                 boolDate = false
@@ -156,7 +129,6 @@ extension WaktuSholatTimelineProvider {
                 boolDate = true
             }
         }
-        
         var boolLoc = true
         if let locality = UserDefaults.standard.string(forKey: Def.location) {
             if locality == loc.locationName?.locality {
@@ -165,7 +137,6 @@ extension WaktuSholatTimelineProvider {
                 boolLoc = true
             }
         }
-        
         var boolMethod = true
         if let method = UserDefaults.standard.string(forKey: Def.method) {
             if method == service.method.info.name {
@@ -174,8 +145,6 @@ extension WaktuSholatTimelineProvider {
                 boolMethod = true
             }
         }
-        
         return boolDate && boolLoc && boolMethod
-        
     }
 }

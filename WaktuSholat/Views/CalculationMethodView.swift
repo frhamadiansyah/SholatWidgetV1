@@ -13,18 +13,18 @@ struct CalculationMethodView: View {
     @ObservedObject var settingVM = SettingViewModel.shared
     
     var body: some View {
-        List(0..<CalculationMethod.allCases.count) { i in
+        List(0..<CalculationMethod.allCases.count) { index in
 
             Button(action: {
-                self.settingVM.sholatVM.service.method = CalculationMethod.allCases[i]
+                self.settingVM.sholatVM.service.method = CalculationMethod.allCases[index]
                 self.settingVM.sholatVM.runCode()
-                UserDefaults.standard.set(CalculationMethod.allCases[i].info.name, forKey: Def.method)
+                UserDefaults.standard.set(CalculationMethod.allCases[index].info.name, forKey: Def.method)
                 self.presentationMode.wrappedValue.dismiss()
             }, label: {
                 HStack {
-                    Text("\(CalculationMethod.allCases[i].info.name)")
+                    Text("\(CalculationMethod.allCases[index].info.name)")
                     Spacer()
-                    if self.settingVM.sholatVM.service.method == CalculationMethod.allCases[i] {
+                    if self.settingVM.sholatVM.service.method == CalculationMethod.allCases[index] {
                         Image(systemName: "checkmark")
                             .foregroundColor(Color(Def.secondary))
                     }

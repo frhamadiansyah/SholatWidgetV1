@@ -8,50 +8,50 @@
 import Foundation
 
 enum CalculationMethod: CaseIterable {
-    case ShiaIthnaAnsari
-    case UniversityOfIslamicSciencesKarachi
-    case IslamicSocietyOfNorthAmerica
-    case MuslimWorldLeague
-    case UmmAlQuraUniversityMakkah
-    case EgyptianGeneralAuthorityOfSurvey
-    case InstituteOfGeophysicsUniversityOfTehran
-    case GulfRegion
-    case Kuwait
-    case Qatar
-    case MajlisUgamaIslamSingapuraSingapore
-    case UnionOrganizationIslamicDeFrance
-    case DiyanetİşleriBaşkanlığıTurkey
-    case SpiritualAdministrationOfMuslimsOfRussia
+    case shiaIthnaAnsari
+    case universityOfIslamicSciencesKarachi
+    case islamicSocietyOfNorthAmerica
+    case muslimWorldLeague
+    case ummAlQuraUniversityMakkah
+    case egyptianGeneralAuthorityOfSurvey
+    case instituteOfGeophysicsUniversityOfTehran
+    case gulfRegion
+    case kuwait
+    case qatar
+    case majlisUgamaIslamSingapuraSingapore
+    case unionOrganizationIslamicDeFrance
+    case diyanetİşleriBaşkanlığıTurkey
+    case spiritualAdministrationOfMuslimsOfRussia
     
     var info: (num: Int, name: String) {
         switch self {
-        case .ShiaIthnaAnsari:
+        case .shiaIthnaAnsari:
             return (0, "Shia Ithna-Ansari")
-        case .UniversityOfIslamicSciencesKarachi:
+        case .universityOfIslamicSciencesKarachi:
             return (1, "University of Islamic Sciences, Karachi")
-        case .IslamicSocietyOfNorthAmerica:
+        case .islamicSocietyOfNorthAmerica:
             return (2, "Islamic Society of North America")
-        case .MuslimWorldLeague:
+        case .muslimWorldLeague:
             return (3, "Muslim World League")
-        case .UmmAlQuraUniversityMakkah:
+        case .ummAlQuraUniversityMakkah:
             return (4, "Umm Al-Qura University, Makkah")
-        case .EgyptianGeneralAuthorityOfSurvey:
+        case .egyptianGeneralAuthorityOfSurvey:
             return (5, "Egyptian General Authority of Survey")
-        case .InstituteOfGeophysicsUniversityOfTehran:
+        case .instituteOfGeophysicsUniversityOfTehran:
             return (7, "Institute of Geophysics, University of Tehran")
-        case .GulfRegion:
+        case .gulfRegion:
             return (8, "Gulf Region")
-        case .Kuwait:
+        case .kuwait:
             return (9, "Kuwait")
-        case .Qatar:
+        case .qatar:
             return (10, "Qatar")
-        case .MajlisUgamaIslamSingapuraSingapore:
+        case .majlisUgamaIslamSingapuraSingapore:
             return (11, "Majlis Ugama Islam Singapura, Singapore")
-        case .UnionOrganizationIslamicDeFrance:
+        case .unionOrganizationIslamicDeFrance:
             return (12, "Union Organization islamic de France")
-        case .DiyanetİşleriBaşkanlığıTurkey:
+        case .diyanetİşleriBaşkanlığıTurkey:
             return (13, "Diyanet İşleri Başkanlığı, Turkey")
-        case .SpiritualAdministrationOfMuslimsOfRussia:
+        case .spiritualAdministrationOfMuslimsOfRussia:
             return (14, "Spiritual Administration of Muslims of Russia")
         default:
             return (3, "Muslim World League")

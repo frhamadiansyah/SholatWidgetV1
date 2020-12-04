@@ -13,22 +13,22 @@ class LocationManager: NSObject, CLLocationManagerDelegate, ObservableObject {
     @Published var lastKnownLocation: CLLocationCoordinate2D?
     @Published var thisLocation: CLLocation?
     @Published var locationName: CLPlacemark?
-   
+    
     
     static let shared = LocationManager()
-
+    
     override init() {
         super.init()
         manager.delegate = self
         manager.requestAlwaysAuthorization()
         
     }
-
+    
     func start() {
-//        manager.requestWhenInUseAuthorization()
+        //        manager.requestWhenInUseAuthorization()
         manager.startMonitoringSignificantLocationChanges()
     }
-
+    
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         lastKnownLocation = locations.first?.coordinate
         thisLocation = locations.first
@@ -38,6 +38,12 @@ class LocationManager: NSObject, CLLocationManagerDelegate, ObservableObject {
 
 
 extension LocationManager {
+    
+    func getCoordinates(completion: @escaping (CLLocation) -> Void) {
+        if let coord = manager.location {
+            completion(coord)
+        }
+    }
     
     
     func getPlace(for location: CLLocation,

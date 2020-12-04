@@ -46,11 +46,7 @@ class SholatObservableObject : ObservableObject {
 //                            }
 //                        })
                     }
- 
-//        let timer = Timer(fireAt: Date(), interval: 300, target: self, selector: #selector(runCode), userInfo: nil, repeats: true)
-//        RunLoop.main.add(timer, forMode: .common)
     }
-    
     @objc func runCode() {
 
         fetchWaktuSholat { [weak self] (result) in
@@ -59,7 +55,7 @@ class SholatObservableObject : ObservableObject {
                 DispatchQueue.main.async {
                     self?.sholatTime = sholat
                 }
-            case .failure(let _):
+            case .failure(_):
                 DispatchQueue.main.async {
                     print("error in sholat view model")
                 }
@@ -68,16 +64,13 @@ class SholatObservableObject : ObservableObject {
 
     }
     
-
-    
     func getLocationName() {
         self.loc.getPlace(for: loc.thisLocation!, completion: { [weak self] (locationName) in
             self?.placemark = locationName
         })
     }
     
-    
-    private func fetchWaktuSholat(completion : @escaping (Result<SholatTime, Error>) -> ()) {
+    private func fetchWaktuSholat(completion : @escaping (Result<SholatTime, Error>) -> Void) {
         if needRefresh() {
             guard let lat = loc.thisLocation?.coordinate.latitude else { return  }
             guard let lon = loc.thisLocation?.coordinate.longitude else { return  }
@@ -90,7 +83,7 @@ class SholatObservableObject : ObservableObject {
                     let userDefault = UserDefaults.standard
                     do {
                         try userDefault.setObject(stats, forKey: Def.sholat)
-                    } catch  {
+                    } catch {
                         completion(.failure(error))
                     }
                     let entry = SholatTime(waktuSholat: stats)
@@ -99,27 +92,21 @@ class SholatObservableObject : ObservableObject {
                 case .failure(let error):
                     completion(.failure(error))
                 }
-                
             }
-            
         } else {
             let userDefault = UserDefaults.standard
             do {
                 let stats = try userDefault.getObject(forKey: Def.sholat, castTo: SholatTimings.self)
                 let entry = SholatTime(waktuSholat: stats)
                 completion(.success(entry))
-            } catch  {
+            } catch {
                 completion(.failure(error))
             }
         }
-        
     }
-    
-    
     
     private func needRefresh() -> Bool {
         var boolDate = true
-        
         let format = DateFormatter()
         format.dateStyle = .short
         let dateString = format.string(from: Date())
@@ -131,7 +118,6 @@ class SholatObservableObject : ObservableObject {
                 boolDate = true
             }
         }
-        
         var boolLoc = true
         if let locality = UserDefaults.standard.string(forKey: Def.location) {
             if locality == loc.locationName?.locality {
@@ -149,10 +135,7 @@ class SholatObservableObject : ObservableObject {
                 boolMethod = true
             }
         }
-        
         return boolDate && boolLoc && boolMethod
         
     }
-    
-    
 }

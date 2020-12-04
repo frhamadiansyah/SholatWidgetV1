@@ -7,12 +7,7 @@
 
 import SwiftUI
 
-struct HomeView: View {
-    
-//    init() {
-//        UITabBar.appearance().backgroundColor = UIColor.green
-//    }
-    
+struct HomeView: View { 
     var body: some View {
             TabView {
                 ScheduleView()

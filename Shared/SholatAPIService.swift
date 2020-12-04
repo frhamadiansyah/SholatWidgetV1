@@ -28,7 +28,7 @@ class SholatAPIService {
     
     static let shared = SholatAPIService()
     
-    var method: CalculationMethod = .MuslimWorldLeague
+    var method: CalculationMethod = .muslimWorldLeague
     
     init() {
         self.getMethodFromUserDefaults()
@@ -47,17 +47,17 @@ class SholatAPIService {
             }
         }
         if savedMethod.isEmpty{
-//            return .MuslimWorldLeague
-            self.method = .MuslimWorldLeague
+            //            return .MuslimWorldLeague
+            self.method = .muslimWorldLeague
         } else {
-//            return savedMethod[0]
+            //            return savedMethod[0]
             self.method = savedMethod[0]
         }
     }
     
     
     
-//    func getTodaySholatTime(latitude : Double, longitude : Double, completion : @escaping (Result<SholatTimings,SholatAPIError>) -> ()) {
+    //    func getTodaySholatTime(latitude : Double, longitude : Double, completion : @escaping (Result<SholatTimings,SholatAPIError>) -> ()) {
     func getTodaySholatTimeFromCoordinates(latitude : Double, longitude : Double, completion : @escaping (Result<SholatTimings,SholatAPIError>) -> ()) {
         
         // get date
@@ -103,7 +103,7 @@ class SholatAPIService {
                 let model = try
                     self.jsonDecoder.decode(D.self, from: safeData)
                 completion(.success(model))
-                    
+                
             } catch {
                 completion(.failure(.invalidSerialization))
             }
